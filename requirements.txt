@@ -1,0 +1,13 @@
+# Thu thập dữ liệu (src/crawler.py)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Xử lý & làm sạch dữ liệu (src/parser.py, notebooks/)
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Xuất dữ liệu định dạng Parquet (src/io_manager.py)
+pyarrow>=14.0.0
+
+# Notebook (notebooks/01_data_quality.ipynb)
+jupyter>=1.0.0
