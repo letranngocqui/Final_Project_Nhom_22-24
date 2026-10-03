@@ -1,0 +1,13 @@
+﻿column,status,type,reason
+dien_tich_goc,ALLOWED,Numeric,"Diện tích quan sát thực; dùng làm feature và mẫu số target, không phải giá."
+so_phong_ngu,ALLOWED,Numeric,Có thiếu; median + missing indicator được fit trong train/fold.
+khu_vuc_nhom,ALLOWED,Categorical,Nhóm địa lý compact từ Bài tập 3; OneHotEncoder fit trong train/fold.
+loai_bds,ALLOWED,Categorical,Loại BĐS suy ra từ tiêu đề; OneHotEncoder fit trong train/fold.
+gia,FORBIDDEN,Leakage,Giá sau impute; target price_per_m2 = giá/diện tích nên đưa giá vào X gây target leakage.
+gia_goc,FORBIDDEN,Leakage,Tử số trực tiếp của target; tuyệt đối không đưa vào X.
+price_per_m2,FORBIDDEN,Target,"Biến mục tiêu y, không phải feature."
+gia_thieu,FORBIDDEN,Constant after scope,"Sau observed-target filter cờ này luôn False, không mang thông tin."
+dien_tich_thieu,FORBIDDEN,Constant after scope,"Sau observed-target filter cờ này luôn False, không mang thông tin."
+tieu_de,FORBIDDEN_CURRENT,Free text,Chỉ dùng để suy ra loai_bds; chưa có NLP pipeline được kiểm chứng cho Bài 4.
+vi_tri,FORBIDDEN_CURRENT,High-cardinality text,Dùng để suy ra khu_vuc_nhom; không one-hot trực tiếp 159+ nhãn.
+link_nguon,ID_ONLY,Identifier,Chỉ dùng khử trùng/chứng minh split không chồng lặp; không dùng để học.

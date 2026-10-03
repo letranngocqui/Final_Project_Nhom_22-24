@@ -1,0 +1,6 @@
+﻿step,rows_before,rows_after,rows_removed,removed_pct_of_step,reason
+01_deduplicate_link,5435,5388,47,0.865,Mỗi link_nguon là một tin; giữ bản ghi đầu tiên để train/test không chứa cùng một tin.
+02_observed_target_only,5388,3564,1824,33.853,Target dùng gia_goc/dien_tich_goc quan sát thực; loại mọi dòng từng thiếu/được impute giá hoặc diện tích.
+03_area_scope_10_2000,3564,3558,6,0.168,Theo Project Charter: chỉ giữ diện tích từ 10 đến 2000 m².
+04_sale_scope,3558,3480,78,2.192,Project Charter đặt tin cho thuê ngoài phạm vi; loại các tiêu đề có từ khóa thuê/cho thuê.
+05_positive_finite_target,3480,3480,0,0.0,Giữ price_per_m2 dương và hữu hạn; không học ngưỡng phân vị từ toàn bộ dataset.

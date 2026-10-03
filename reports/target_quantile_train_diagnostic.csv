@@ -1,0 +1,2 @@
+﻿lower_quantile,upper_quantile,lower_bound_vnd_m2,upper_bound_vnd_m2,train_rows,flagged_train_rows,flagged_train_pct,policy
+0.01,0.99,4388666.666666667,463076923.0769237,2784,56,2.011,diagnostic_only_train_fitted; hold-out test untouched
