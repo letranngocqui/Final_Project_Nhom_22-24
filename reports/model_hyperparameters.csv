@@ -1,0 +1,5 @@
+﻿model,best_params,best_cv_mae_vnd_m2
+LinearRegression,{},
+Ridge,"{""model__alpha"": 10.0}",56624051.371574305
+Ridge_log1p,"{""regressor__model__alpha"": 3.1622776601683795}",54035249.139532946
+RandomForest,"{""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 3, ""model__n_estimators"": 400}",51674711.12787853
