@@ -1,0 +1,41 @@
+"""Modeling utilities for Bài tập 4."""
+
+from .preprocess import (
+    AREA_MAX_M2,
+    AREA_MIN_M2,
+    CATEGORICAL_FEATURES,
+    ID_COLUMN,
+    MODEL_FEATURES,
+    NUMERIC_FEATURES,
+    TARGET,
+    build_model_pipeline,
+    build_modeling_table,
+    build_preprocessor,
+    correlation_report,
+    feature_contract,
+    save_split_tables,
+    split_model_data,
+    training_target_quantile_diagnostics,
+    transformed_feature_names,
+    vif_report,
+)
+
+__all__ = [
+    "AREA_MAX_M2",
+    "AREA_MIN_M2",
+    "CATEGORICAL_FEATURES",
+    "ID_COLUMN",
+    "MODEL_FEATURES",
+    "NUMERIC_FEATURES",
+    "TARGET",
+    "build_model_pipeline",
+    "build_modeling_table",
+    "build_preprocessor",
+    "correlation_report",
+    "feature_contract",
+    "save_split_tables",
+    "split_model_data",
+    "training_target_quantile_diagnostics",
+    "transformed_feature_names",
+    "vif_report",
+]
