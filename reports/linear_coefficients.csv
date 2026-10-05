@@ -1,0 +1,10 @@
+﻿feature,y_nghia,he_so_trieu_m2,ci95_thap,ci95_cao,khac_0_95pct
+cat__loai_bds_Đất nền,so với nhóm tham chiếu,-60.469656682333124,-68.7336021829225,-51.66517076793905,True
+cat__khu_vuc_nhom_Bình Dương (mới sáp nhập),so với nhóm tham chiếu,-60.31525993054156,-67.41652500875371,-51.78065381169395,True
+cat__khu_vuc_nhom_Bà Rịa - Vũng Tàu (mới sáp nhập),so với nhóm tham chiếu,-54.85641126996619,-62.35600140245836,-45.841653248518014,True
+cat__loai_bds_Căn hộ/Chung cư,so với nhóm tham chiếu,-53.20119574110755,-59.85567080147567,-46.14011785577558,True
+num__missingindicator_so_phong_ngu,tin KHÔNG ghi số phòng ngủ (so với có ghi),33.72831738196142,26.80401650814533,40.48472528727838,True
+cat__loai_bds_Khác,so với nhóm tham chiếu,-9.33113596663547,-17.44327268740028,-1.1134687454754146,True
+cat__loai_bds_Biệt thự,so với nhóm tham chiếu,6.207305519073898,-4.279552107208334,16.952719369234487,False
+num__dien_tich_goc,mỗi +10 m² diện tích,-3.157924990226146,-3.6679231802197667,-2.6646198096646363,True
+num__so_phong_ngu,mỗi +1 phòng ngủ,2.7912642353499044,2.2083756891046877,3.575818159726545,True
