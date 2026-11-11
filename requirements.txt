@@ -1,13 +1,24 @@
-# Thu thập dữ liệu (src/crawler.py)
+# ===== Thu thập & làm sạch dữ liệu (src/crawler.py, src/parser.py, src/io_manager.py) =====
 requests>=2.31.0
 beautifulsoup4>=4.12.0
-
-# Xử lý & làm sạch dữ liệu (src/parser.py, notebooks/)
 pandas>=2.0.0
 numpy>=1.24.0
-
-# Xuất dữ liệu định dạng Parquet (src/io_manager.py)
 pyarrow>=14.0.0
 
-# Notebook (notebooks/01_data_quality.ipynb)
+# ===== Modeling (src/modeling/preprocess.py, notebooks 07-09) =====
+# Ghim đúng phiên bản đã dùng để lưu models/best_model.joblib (scikit-learn 1.7.2).
+# Load bằng 1.8.x/1.9.x sẽ lỗi "'SimpleImputer' object has no attribute '_fill_dtype'". Cần Python >= 3.10.
+scikit-learn==1.7.2
+joblib>=1.3.0
+statsmodels>=0.14.0   # tính VIF (variance_inflation_factor)
+
+# ===== Trực quan hoá =====
+matplotlib>=3.7.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# ===== Demo app "Định giá nhanh" (app.py) =====
+streamlit>=1.30.0
+
+# ===== Notebook =====
 jupyter>=1.0.0
